@@ -2,11 +2,11 @@ import java.util.Date;
 
 public class Movie {
     String code, name, time, lang, genre;
-    Date date;
+    String date;
     int avaSeats , totSeats;
     double tickPrice;
 
-    public Movie(String movieCode,String movieName, Date date, String showTime, int totalSeats ,int availableSeats, double ticketPrice, String language, String genre){
+    public Movie(String movieCode,String movieName, String date, String showTime, int totalSeats ,int availableSeats, double ticketPrice, String language, String genre){
         this.code = movieCode;
         this.name = movieName;
         this.date = date;
