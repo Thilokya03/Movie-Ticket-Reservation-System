@@ -31,6 +31,7 @@ public class Files {
             System.out.println("Your csv file has an error!!!");
         }
     }
+
     public void savedBooking(Booking book ,String name) {
         try {
             String filePath = name + ".ser";
@@ -44,7 +45,7 @@ public class Files {
         }
     }
 
-    public static Booking loadBooking(String name) {
+    public Booking loadBooking(String name) {
         try {
             String filePath = name + ".ser";
             FileInputStream fileStream = new FileInputStream(filePath);
@@ -59,7 +60,7 @@ public class Files {
         }
     }
 
-    public static void deleteSavedBooking(String name) {
+    public void deleteSavedBooking(String name) {
         String filePath = name + ".ser";
         File file = new File(filePath);
 
